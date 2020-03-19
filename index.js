@@ -1,4 +1,4 @@
-const mysql = reqruire("mysql");
+const mysql = require("mysql");
 const inquirer = require("inquirer");
 
 //Makes the SQL connectu=ion
