@@ -87,7 +87,7 @@ function addDepartment(){
 function viewDepartment() {
     const query = "SELECT * FROM department"
     connection.query(query, function (err, res) {
-        if (err) throw err;
+        if (err) throw err
         for (var i = 0; i < res.length; i++) {
             console.log(res[i].id + "-" + res[i].name)
         }
@@ -128,7 +128,7 @@ function addRole() {
             department_id: answers.roleDepId
         },
             function (err) {
-                if (err) throw err;
+                if (err) throw err
                 console.log("role added")
                 start()
             })
@@ -187,7 +187,7 @@ function addEmployees() {
             manager_id: answers.employeeManagerId
 
         }, function (err) {
-            if (err) throw err;
+            if (err) throw err
             console.log("employee added")
             start()
         })
@@ -198,7 +198,7 @@ function addEmployees() {
 function viewEmployees() {
     const query = "SELECT * FROM employees"
     connection.query(query, function (err, res) {
-        if (err) throw err;
+        if (err) throw err
         for (var i = 0; i < res.length; i++) {
             console.log('employee id: ' + res[i].id + '||' + ' employee first name: ' + res[i].first_name + '||' + 'employee last name: ' + res[i].last_name + '||' + 'employees role id: ' + res[i].role_id + '||' + 'employees manager id: ' + res[i].manager_id)
         }
