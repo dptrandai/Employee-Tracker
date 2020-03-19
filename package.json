@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dptrandai/Employee-Tracker#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "inquirer": "^7.1.0",
     "mysql": "^2.18.1"
   }
 }
